@@ -1,0 +1,5 @@
+export { default as Navbar } from "./Navigation/Navbar"
+export { default as Heading } from "./Heading"
+export { default as Experience } from "./Experience"
+export { default as Education } from "./Education"
+export { default as Project } from "./Project"
