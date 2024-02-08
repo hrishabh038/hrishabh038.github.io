@@ -28,7 +28,6 @@ const Register = (props: Props) => {
     });
   }
   return (
-    <>
       <AuthFormContainer
         heading="Create new account"
         link="/auth/login"
@@ -76,14 +75,13 @@ const Register = (props: Props) => {
                 className="text-blue-500 cursor-pointer hover:text-blue-700"
                 onClick={() => router.push("/")}
               >
-                Hrishabh Jain's
+                Hrishabh Jain&apos;s
               </span>{" "}
               Conditions of Use and Privacy Notice.
             </p>
           </div>
         </form>
       </AuthFormContainer>
-    </>
   );
 };
 
