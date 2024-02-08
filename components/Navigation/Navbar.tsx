@@ -6,7 +6,6 @@ import {
   LucideIcon,
   Twitter,
 } from "lucide-react";
-import Image from "next/image";
 import React from "react";
 import { twMerge } from "tailwind-merge";
 const socialMedia = [
@@ -39,12 +38,12 @@ const Navbar = (props: Props) => {
   return (
     <nav className={twMerge(" flex flex-col items-start", props.className)}>
       <div className="relative w-full h-[300px] lg:h-full mb-[30px]">
-        <Image src={"/images/4.jpg"} alt="hrishabh038" className="rounded-md aspect-square" objectFit="cover" fill />
+        <img src={"/images/4.jpg"} alt="hrishabh038" className="rounded-md aspect-square object-cover w-full h-full" />
       </div>
       <div className="">
         <h1 className="text-4xl font-bold">Hrishabh Jain</h1>
         <p className=" text-lg mt-[5px] mb-[16px] text-white/75 ">
-          Software Engineer Trainee
+          Software Engineer
         </p>
         <p className="text-neutral-400 text-left">
           I build pixel-perfect, accessible products for the web and beyond.
