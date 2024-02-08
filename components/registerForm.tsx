@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useTransition } from "react";
 import { AuthFormContainer } from "../containers/containers";
-import { Button, Input, MobileInput, Toast } from "./components";
+import { Button, Input, MobileInput } from "./components";
 import { useRouter } from "next/navigation";
 import { register } from "@/action/auth/register";
 import toast from "react-hot-toast";
