@@ -2,7 +2,14 @@ import { School } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
-type Props = {};
+type Props = {
+  start: string
+  end: string
+  institute: string
+  majour: string
+  board: string
+  location: string
+};
 
 const Education = (props: Props) => {
   return (
@@ -12,17 +19,17 @@ const Education = (props: Props) => {
       </div>
       <div className="">
         <div className="flex items-center gap-2 text-xs mt-1">
-          <span className="text-neutral-400">2023</span>
+          <span className="text-neutral-400">{props.start}</span>
           <div className="w-[15px] h-[1px] bg-neutral-400"></div>
-          <span className="text-neutral-400">2023</span>
+          <span className="text-neutral-400">{props.end}</span>
         </div>
-        <h1 className="flex items-center gap-2 text-neutral-300 my-2">
-          Student
-          @
-          Mukularanayam, Varanasi
+        <h1 className="flex items-center gap-2 text-neutral-300 my-1">
+          <span>{props.board}</span>
+          <span>@</span>
+          <span>{props.institute}</span>
         </h1>
-        <p className="text-xl font-bold text-white">B.Tech (CSE)</p>
-        <p>Varanasi, Uttar Pradesh, India, 221010</p>
+        <p className="text-xl font-bold text-white">{props.majour}</p>
+        <p>{props.location}</p>
       </div>
     </div>
   );

@@ -1,7 +1,9 @@
 import {
+  ExternalLink,
   Facebook,
   Github,
   Instagram,
+  Link,
   Linkedin,
   LucideIcon,
   Twitter,
@@ -11,23 +13,23 @@ import { twMerge } from "tailwind-merge";
 const socialMedia = [
   {
     icon: Instagram,
-    href: "#",
+    href: "https://www.instagram.com/hrishabh038/",
   },
   {
     icon: Facebook,
-    href: "#",
+    href: "https://www.facebook.com/hrishabh038/",
   },
   {
     icon: Linkedin,
-    href: "#",
+    href: "https://www.linkedin.com/in/hrishabh038/",
   },
   {
     icon: Github,
-    href: "#",
+    href: "https://github.com/hrishabh038",
   },
   {
     icon: Twitter,
-    href: "#",
+    href: "https://twitter.com/hrishabh038",
   },
 ];
 
@@ -41,7 +43,7 @@ const Navbar = (props: Props) => {
         <img src={"/images/4.jpg"} alt="hrishabh038" className="rounded-md aspect-square object-cover w-full h-full" />
       </div>
       <div className="">
-        <h1 className="text-4xl font-bold">Hrishabh Jain</h1>
+        <a href="https://drive.google.com/file/d/1zMsKGNPcOodiu6GJBEtMsEweO_ufhQUH/view?usp=sharing" target="_blank" className="text-4xl font-bold flex items-baseline hover:underline">Hrishabh Jain<ExternalLink className="text-blue-300" size={15} /></a>
         <p className=" text-lg mt-[5px] mb-[16px] text-white/75 ">
           Software Engineer
         </p>
